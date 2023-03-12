@@ -23,7 +23,8 @@ export default function PokemonId() {
     const pokespecial_attack = data.name;
     const pokespecial_defense = data.name;
     const pokespeed = data.name;
-    const pokeimage = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.order}.png`
+    const pokeimage = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`
+    console.log(pokeimage)
 
     return (
         <div className="mt-5">
@@ -36,12 +37,12 @@ export default function PokemonId() {
                     <div className="col-md-8">
                         <div className="card-body">
                             <h5 className="card-title">{pokename}</h5>
-                            <p className="card-text">{pokehp}</p>
-                            <p className="card-text">{pokeattack}</p>
-                            <p className="card-text">{pokedefense}</p>
-                            <p className="card-text">{pokespecial_attack}</p>
-                            <p className="card-text">{pokespecial_defense}</p>
-                            <p className="card-text">{pokespeed}</p>
+                            <p className="card-text">hp: {pokehp}</p>
+                            <p className="card-text">attack: {pokeattack}</p>
+                            <p className="card-text">defense: {pokedefense}</p>
+                            <p className="card-text">special attack: {pokespecial_attack}</p>
+                            <p className="card-text">special defense: {pokespecial_defense}</p>
+                            <p className="card-text">speed: {pokespeed}</p>
                         </div>
                     </div>
                 </div>
