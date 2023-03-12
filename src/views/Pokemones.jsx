@@ -21,7 +21,7 @@ export default function Pokemones() {
             <div className="input-group mb-3">
             <select className="form-select" aria-label="Default select example"
             value={id} onChange={({ target }) => setId(target.value)}>
-                <option selected>Pokemones</option>
+                <option defaultValue={Pokemones}>Pokemones</option>
                 { pokedata }
             </select>
             <button className="btn btn-outline-seconday" onClick={gotoPokemon}>Ver Pokemon</button>
