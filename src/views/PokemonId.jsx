@@ -17,12 +17,12 @@ export default function PokemonId() {
     if (!data) return null;
     console.log(data);
     const pokename = data.name;
-    const pokehp = data.order;
-    const pokeattack = data.name;
-    const pokedefense = data.name;
-    const pokespecial_attack = data.name;
-    const pokespecial_defense = data.name;
-    const pokespeed = data.name;
+    const pokehp = data.stats[0].base_stat;
+    const pokeattack = data.stats[1].base_stat;
+    const pokedefense = data.stats[2].base_stat;
+    const pokespecial_attack = data.stats[3].base_stat;
+    const pokespecial_defense = data.stats[4].base_stat;
+    const pokespeed = data.stats[5].base_stat;
     const pokeimage = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`
     console.log(pokeimage)
 
